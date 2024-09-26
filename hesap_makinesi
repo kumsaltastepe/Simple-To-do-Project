@@ -1,0 +1,54 @@
+// hesap makinesi
+// degiskenler
+// operatorler
+// async methodu
+// if condition
+
+actor hesap_makinesi {
+var hucre: Int = 0;
+
+// toplama
+// fonksiyon
+public func toplama(s: Int) : async Int {
+  hucre += s;
+  hucre
+
+};
+
+// cikarma
+// fonksiyon
+public func cikarma(s: Int) : async Int {
+  hucre -= s;
+  hucre
+
+};
+
+// carpma
+// fonksiyon
+public func carpma(s: Int) : async Int {
+hucre *= s;
+hucre
+
+};
+
+// bolme
+// fonksiyon
+public func bolme(s: Int) : async ?Int{
+  if (s == 0) {
+    null
+  }else {
+    hucre /= s;
+    ?hucre
+
+  };
+};
+
+// temizle
+// fonksiyon
+public func temizle() : async () {
+  hucre := 0;
+
+};
+
+
+};
